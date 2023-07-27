@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Employee Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Section 1](https://github.com/bb2882/ReactEmployees/assets/70382872/79ff1cb6-2537-4557-af0a-3f2742e1d791)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This is an Employee Management App built with React. It allows you to manage a list of employees, search for employees by name, and filter them based on certain criteria. Additionally, you can award employees and mark them for promotion.
 
-### `npm start`
+### Total Number of Employees and Awards
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Currently, there are 3 in the system, and 0 employees are eligible for awards. Please note that the number of awarded employees can be adjusted as you add more employees in the future.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+### Search Bar and Filter
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app provides a search bar that allows you to search for employees by their names. Below the search bar, there is a filter box containing the following buttons:
 
-### `npm run build`
+- **All Employees:** Show all employees in the list.
+- **On Promotion:** Show employees marked for promotion.
+- **Salary > $1000:** Show employees with a salary greater than $1000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clicking on any of these filter buttons will display the employees who meet the corresponding criteria.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Employee List
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In this section, you can view the list of employees along with their names and salaries. Each employee entry has two buttons: **Delete** and **Award**.
 
-### `npm run eject`
+- **Delete:** Clicking this button will remove the employee from the list.
+- **Award:** Clicking this button will mark the employee as eligible for an award.
+- **Promote** Clicking on employee will indicate that he should be promoted. A star icon will appear next to the button to indicate the employee's eligibility.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Add Employee
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To add a new employee, go to the "Add Employee" section. Here, you can provide the employee's name and salary in the input fields and click the **Add** button. The new employee will be added to the employee list.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run this project on your local machine, follow these steps:
 
-## Learn More
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+git clone https://github.com/bb2882/ReactEmployees.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install dependencies:
 
-### Code Splitting
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Start the app:
 
-### Analyzing the Bundle Size
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The app will open in your default web browser, and you can begin managing your employees.
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you find any issues or have suggestions to improve this project, feel free to create an issue or submit a pull request on the GitHub repository.
 
-### Advanced Configuration
+## Note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is designed to provide a simple and understandable UI for managing employees. Feel free to extend its functionalities and customize it according to your specific needs.
